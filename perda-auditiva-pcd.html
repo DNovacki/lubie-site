@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Perda auditiva dá direito a PCD? O que diz a lei | Lubie Curitiba</title>
+<meta name="description" content="Perda auditiva dá direito a PCD? Entenda o que mudou com a Lei 14.768/2023 e os critérios de reconhecimento da deficiência auditiva. Tire suas dúvidas com a Fga. Jéssica, em Curitiba."/>
+<link rel="canonical" href="https://lubieaparelhosauditivos.com.br/perda-auditiva-pcd.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --marrom-esc:  #3d3b30;
+    --marrom-mid:  #454234;
+    --marrom:      #545241;
+    --salmon:      #8a5230;
+    --tan:         #b78a6b;
+    --gold:        #e8b84b;
+    --blush:       #edd5c0;
+    --creme:       #faf2ec;
+    --branco:      #ffffff;
+    --texto-light: #7a6b60;
+  }
+  body {
+    background: #e8e2d8;
+    font-family: 'DM Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  .poster {
+    width: 700px;
+    background: var(--marrom-esc);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+  }
+  /* ── HERO ── */
+  .hero {
+    background: var(--marrom-mid);
+    padding: 2.5rem 2.5rem 2rem;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .tag {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--marrom-esc);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--branco);
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
+  }
+  .hero h1 span { color: var(--tan); }
+  .hero p {
+    font-size: 0.95rem;
+    color: var(--texto-light);
+    line-height: 1.6;
+    max-width: 460px;
+  }
+  .lei-pill {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    background: rgba(138,82,48,0.15);
+    border: 1px solid rgba(138,82,48,0.4);
+    border-radius: 8px;
+    padding: 8px 14px;
+    text-align: center;
+  }
+  .lei-pill .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--tan);
+    display: block;
+  }
+  .lei-pill .desc {
+    font-size: 10px;
+    color: var(--texto-light);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  /* ── SECTIONS ── */
+  .section {
+    padding: 1.75rem 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--tan);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(138,82,48,0.25);
+  }
+  /* ── O QUE MUDOU ── */
+  .mudou-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .mudou-card {
+    background: var(--marrom);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    border-left: 3px solid var(--salmon);
+  }
+  .mudou-card .title {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--tan);
+    margin-bottom: 4px;
+  }
+  .mudou-card p {
+    font-size: 0.8rem;
+    color: var(--blush);
+    line-height: 1.5;
+  }
+  /* ── AVALIAÇÃO ── */
+  .aval-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .aval-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--marrom);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+  }
+  .aval-num {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(138,82,48,0.2);
+    border: 1px solid rgba(138,82,48,0.5);
+    color: var(--tan);
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .aval-text strong {
+    font-size: 0.85rem;
+    color: var(--branco);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .aval-text span {
+    font-size: 0.78rem;
+    color: var(--texto-light);
+    line-height: 1.45;
+  }
+  /* ── DIREITOS ── */
+  .direitos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .direito-tag {
+    background: var(--marrom);
+    border-radius: 10px;
+    padding: 0.8rem 0.85rem;
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--blush);
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .direito-tag .icon {
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 6px;
+  }
+  /* ── DESTAQUE NÃO ── */
+  .nao-box {
+    background: linear-gradient(135deg, var(--marrom), var(--marrom-mid));
+    border: 1px solid rgba(232,184,75,0.3);
+    border-radius: 14px;
+    padding: 1.4rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .nao-box .nao-word {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .nao-box .nao-text strong {
+    font-size: 0.9rem;
+    color: var(--branco);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .nao-box .nao-text p {
+    font-size: 0.8rem;
+    color: var(--texto-light);
+    line-height: 1.55;
+  }
+  /* ── FOOTER ── */
+  .footer {
+    background: rgba(138,82,48,0.12);
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .footer-text strong {
+    font-size: 0.85rem;
+    color: var(--branco);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .footer-text p {
+    font-size: 0.75rem;
+    color: var(--texto-light);
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--tan);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .footer-brand span {
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--texto-light);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="poster">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="tag">Lei Nova</div>
+    <div class="lei-pill">
+      <strong class="num">14.768/2023</strong>
+      <span class="desc">Lei Federal</span>
+    </div>
+    <h1>Perda auditiva<br>dá direito a <span>PCD?</span></h1>
+    <p>A resposta mudou nos últimos anos. Entenda o que a legislação diz hoje e o que é avaliado para o enquadramento.</p>
+  </div>
+  <!-- O QUE MUDOU -->
+  <div class="section">
+    <p class="section-label">O que a nova lei reconheceu</p>
+    <div class="mudou-grid">
+      <div class="mudou-card">
+        <p class="title">Surdez unilateral total</p>
+        <p>Perda auditiva completa em apenas um ouvido.</p>
+      </div>
+      <div class="mudou-card">
+        <p class="title">Perda bilateral parcial ou total</p>
+        <p>Perda nos dois ouvidos, em qualquer grau reconhecido legalmente.</p>
+      </div>
+    </div>
+  </div>
+  <!-- AVALIAÇÃO -->
+  <div class="section">
+    <p class="section-label">O enquadramento não é automático — é avaliado</p>
+    <div class="aval-list">
+      <div class="aval-item">
+        <div class="aval-num">1</div>
+        <div class="aval-text">
+          <strong>Grau da perda</strong>
+          <span>Intensidade e tipo da condição auditiva, medidos por exames objetivos.</span>
+        </div>
+      </div>
+      <div class="aval-item">
+        <div class="aval-num">2</div>
+        <div class="aval-text">
+          <strong>Exames audiológicos</strong>
+          <span>Resultados documentados — como audiometria tonal e vocal.</span>
+        </div>
+      </div>
+      <div class="aval-item">
+        <div class="aval-num">3</div>
+        <div class="aval-text">
+          <strong>Impacto funcional</strong>
+          <span>Como a perda afeta a comunicação, o trabalho e o dia a dia.</span>
+        </div>
+      </div>
+      <div class="aval-item">
+        <div class="aval-num">4</div>
+        <div class="aval-text">
+          <strong>Critérios legais específicos</strong>
+          <span>Variam conforme o benefício ou direito solicitado.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DIREITOS -->
+  <div class="section">
+    <p class="section-label">Direitos que o enquadramento pode garantir</p>
+    <div class="direitos-grid">
+      <div class="direito-tag"><span class="icon">🎓</span>Vagas PCD em concursos</div>
+      <div class="direito-tag"><span class="icon">💼</span>Cotas de emprego</div>
+      <div class="direito-tag"><span class="icon">⏱️</span>Prioridade em atendimentos</div>
+      <div class="direito-tag"><span class="icon">♿</span>Acessibilidade</div>
+      <div class="direito-tag"><span class="icon">🛡️</span>Benefícios previdenciários</div>
+      <div class="direito-tag"><span class="icon">📄</span>Isenções previstas em lei</div>
+    </div>
+  </div>
+  <!-- NÃO PERDE -->
+  <div class="section">
+    <p class="section-label">Dúvida frequente</p>
+    <div class="nao-box">
+      <div class="nao-word">NÃO.</div>
+      <div class="nao-text">
+        <strong>Usar aparelho auditivo não cancela o direito a PCD.</strong>
+        <p>A tecnologia ajuda muito, mas não elimina a condição de base. O paciente ainda pode ser reconhecido como PCD conforme avaliação legal e funcional.</p>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-text">
+      <strong>O ponto de partida é sempre a avaliação auditiva.</strong>
+      <p>Sem exame documentado, não há como confirmar o grau da perda nem o enquadramento legal.</p>
+    </div>
+    <div class="footer-brand">
+      Lubie
+      <span>Fonoaudiologia · Curitiba</span>
+    </div>
+  </div>
+</div>
+<a href="https://wa.me/554132057295?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20auditiva%20gratuita." target="_blank" rel="noopener" class="wa" title="Fale pelo WhatsApp" onclick="trackContactClick('whatsapp')" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</body>
+</html>

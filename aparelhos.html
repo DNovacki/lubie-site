@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aparelhos Auditivos – Lubie | Curitiba</title>
+<meta name="description" content="Conheça os aparelhos auditivos disponíveis na Lubie — Rexton e NuEar com tecnologia de ponta, IA e conectividade. Avaliação gratuita com a Fga. Jéssica."/>
+<link rel="canonical" href="https://lubieaparelhosauditivos.com.br/aparelhos.html"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap"/></noscript>
+<style>
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: #3a2e28; background: #fff;
+  line-height: 1.7; font-size: 16px;
+}
+img { max-width: 100%; display: block; }
+a { text-decoration: none; color: inherit; }
+
+/* ── BRAND TOKENS ── */
+:root {
+  --marrom:      #545241;
+  --marrom-esc:  #3d3b30;
+  --marrom-med:  #6b6650;
+  --tan:         #b78a6b;
+  --salmon:      #8a5230;
+  --blush:       #edd5c0;
+  --creme:       #faf2ec;
+  --creme-med:   #e8ccb4;
+  --branco:      #ffffff;
+  --texto:       #3a2e28;
+  --texto-light: #7a6b60;
+  --sombra:      0 4px 24px rgba(84,82,65,.10);
+  --sombra-h:    0 8px 36px rgba(84,82,65,.18);
+  --radius:      14px;
+  --radius-lg:   22px;
+}
+
+/* ── UTIL ── */
+.container { max-width: 1160px; margin: 0 auto; padding: 0 28px; }
+.section   { padding: 88px 0; }
+.section--creme { background: var(--creme); }
+.section--dark  { background: var(--marrom-esc); color: #fff; }
+
+.pill {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase;
+  color: var(--salmon); background: var(--creme);
+  border: 1px solid var(--blush);
+  padding: 5px 14px; border-radius: 50px; margin-bottom: 16px;
+}
+.pill--light { color: var(--creme); background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.25); }
+
+.sec-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.75rem, 3.8vw, 2.55rem);
+  font-weight: 800; color: var(--marrom);
+  line-height: 1.18; margin-bottom: 16px;
+}
+.sec-title--white { color: #fff; }
+.sec-sub { font-size: 1.05rem; color: var(--texto-light); max-width: 560px; margin-bottom: 44px; line-height: 1.75; }
+.sec-sub--white { color: rgba(255,255,255,.78); }
+
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 30px; border-radius: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .88rem; font-weight: 700;
+  letter-spacing: .02em; cursor: pointer; border: none;
+  transition: all .22s;
+}
+.btn-primary { background: var(--salmon); color: #fff; }
+.btn-primary:hover { background: #703e22; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(138,82,48,.35); }
+.btn-outline { background: transparent; color: var(--marrom); border: 2px solid var(--marrom); }
+.btn-outline:hover { background: var(--marrom); color: #fff; }
+.btn-outline-white { background: transparent; color: var(--marrom); border: 2px solid rgba(84,82,65,.4); }
+.btn-outline-white:hover { background: rgba(255,255,255,.12); }
+
+/* ── NAVBAR ── */
+.nav {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(255,255,255,.97);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(84,82,65,.08);
+  transition: box-shadow .3s;
+}
+.nav.scrolled { box-shadow: var(--sombra); }
+.nav__inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 96px;
+}
+.nav__logo img { height: 58px; width: auto; }
+.nav__links { display: flex; gap: 30px; align-items: center; }
+.nav__links a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .82rem; font-weight: 600;
+  color: var(--marrom-med); letter-spacing: .03em;
+  transition: color .2s;
+}
+.nav__links a:hover, .nav__links a.active { color: var(--salmon); }
+.nav__phone {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.9rem; font-weight: 900;
+  color: #fff; letter-spacing: .01em;
+  background: var(--salmon); padding: 10px 32px;
+  border-radius: 50px;
+  box-shadow: 0 6px 22px rgba(138,82,48,.45);
+  transition: background .2s, transform .2s, box-shadow .2s;
+  line-height: 1.15; white-space: nowrap;
+}
+.nav__phone:hover { background: #703e22; transform: scale(1.02); box-shadow: 0 8px 28px rgba(138,82,48,.55); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { width: 22px; height: 2px; background: var(--marrom); border-radius: 2px; transition: all .3s; }
+
+
+/* ── HERO COM LEITURA SUGERIDA ── */
+.hero-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: center;
+}
+.hero-main { position: relative; z-index: 1; }
+.hero-leitura { position: relative; z-index: 1; }
+.leitura-box {
+  background: rgba(255,255,255,.72);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(183,138,107,.25);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+.leitura-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--salmon); margin-bottom: 14px;
+}
+.leitura-link {
+  display: flex; gap: 10px; align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid rgba(183,138,107,.2);
+  color: var(--marrom); font-size: .9rem; line-height: 1.5;
+  text-decoration: none; transition: color .2s;
+}
+.leitura-link:first-of-type { border-top: none; padding-top: 0; }
+.leitura-link:hover { color: var(--salmon); }
+.leitura-arrow { color: var(--salmon); font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+@media(max-width:860px){
+  .hero-with-sidebar { grid-template-columns: 1fr; }
+  .hero-leitura { display: none; }
+}
+/* ── PAGE HERO ── */
+.page-hero {
+  background: #e8e0d4;
+  padding: 64px 0 80px;
+  position: relative; overflow: hidden;
+}
+.page-hero::before {
+  content: ''; position: absolute; top: -80px; right: -80px;
+  width: 380px; height: 380px; border-radius: 50%;
+  background: rgba(201,169,110,.08);
+}
+.page-hero::after {
+  content: ''; position: absolute; bottom: -40px; left: 10%;
+  width: 200px; height: 200px; border-radius: 50%;
+  background: rgba(201,169,110,.05);
+}
+.breadcrumb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; letter-spacing: .09em; text-transform: uppercase;
+  color: rgba(61,59,48,.55); margin-bottom: 20px;
+}
+.breadcrumb a { color: var(--salmon); }
+.breadcrumb a:hover { color: var(--blush); }
+.breadcrumb span { color: var(--tan); margin: 0 6px; }
+.page-hero h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 800; color: #3d3b30; line-height: 1.12; margin-bottom: 18px;
+}
+.page-hero p { font-size: 1.05rem; color: rgba(61,59,48,.72); max-width: 540px; line-height: 1.75; margin-bottom: 32px; }
+
+/* ── INFO STRIP ── */
+.info-strip {
+  background: var(--creme); border-bottom: 1px solid var(--creme-med);
+  padding: 26px 0;
+}
+.info-strip-inner { display: flex; gap: 40px; flex-wrap: wrap; align-items: center; }
+.info-item { display: flex; align-items: center; gap: 12px; }
+.info-item__icon { font-size: 1.4rem; }
+.info-item strong { display: block; font-size: .85rem; color: var(--texto); font-weight: 700; }
+.info-item span { font-size: .78rem; color: var(--texto-light); }
+
+/* ── MARCA SECTION ── */
+.marca-header { margin-bottom: 32px; }
+.marca-badge {
+  display: inline-block; font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+  padding: 5px 16px; border-radius: 50px; margin-bottom: 12px;
+}
+.marca-badge--rexton { background: var(--marrom-esc); color: var(--blush); }
+.marca-badge--nuear  { background: var(--salmon); color: #fff; }
+.marca-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800; color: var(--marrom); margin-bottom: 12px; line-height: 1.2;
+}
+.marca-desc { font-size: .95rem; color: var(--texto-light); line-height: 1.75; max-width: 700px; }
+
+/* ── DEVICE GRID ── */
+.device-grid { display: flex; flex-direction: column; gap: 22px; }
+.device-row {
+  display: grid; grid-template-columns: 210px 1fr; gap: 28px; align-items: start;
+  background: #fff; border: 1px solid var(--creme-med);
+  border-radius: var(--radius-lg); padding: 24px 28px;
+  box-shadow: var(--sombra); transition: box-shadow .22s, transform .22s;
+}
+.device-row:hover { box-shadow: var(--sombra-h); transform: translateY(-2px); }
+.device-photo-side { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.device-photo-wrap {
+  width: 170px; height: 170px; border-radius: var(--radius);
+  overflow: hidden; background: var(--creme);
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--creme-med);
+}
+.device-photo-wrap img { max-width: 90%; max-height: 90%; object-fit: contain; }
+.device-form-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--salmon); background: var(--creme);
+  border: 1px solid var(--blush); border-radius: 50px;
+  padding: 4px 12px; text-align: center;
+}
+.device-info-side { display: flex; flex-direction: column; gap: 16px; }
+.device-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.22rem; font-weight: 800; color: var(--marrom); margin: 0;
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+}
+.device-subtitle { font-size: .88rem; color: var(--texto-light); margin: 0; }
+.device-features { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 5px; }
+.device-features li {
+  font-size: .88rem; color: var(--texto-light);
+  padding-left: 16px; position: relative; line-height: 1.55;
+}
+.device-features li::before { content: '›'; position: absolute; left: 0; color: var(--salmon); font-weight: 700; }
+.device-features li strong { color: var(--texto); font-weight: 700; }
+.device-lines-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--marrom-med); margin-bottom: 6px;
+}
+.device-colors { display: flex; gap: 7px; align-items: center; }
+.color-swatch {
+  width: 20px; height: 20px; border-radius: 50%;
+  border: 2px solid rgba(0,0,0,.15);
+  box-shadow: 0 1px 4px rgba(0,0,0,.10);
+}
+.lines-table { width: 100%; border-collapse: collapse; font-size: .83rem; }
+.lines-table th {
+  background: var(--marrom-esc); color: #fff; font-family: 'Montserrat', sans-serif;
+  font-weight: 700; padding: 7px 10px; text-align: center; font-size: .75rem;
+  letter-spacing: .04em;
+}
+.lines-table th:first-child { text-align: left; border-radius: 6px 0 0 0; }
+.lines-table th:last-child  { border-radius: 0 6px 0 0; }
+.lines-table td {
+  padding: 6px 10px; border-bottom: 1px solid var(--creme-med);
+  color: var(--texto-light); text-align: center;
+}
+.lines-table td:first-child { text-align: left; color: var(--texto); font-weight: 600; }
+.lines-table tr:last-child td { border-bottom: none; }
+
+/* ── DIVIDER ── */
+hr.divider { border: none; border-top: 1px solid var(--creme-med); margin: 56px 0; }
+
+/* ── CTA DARK ── */
+.cta-dark {
+  background: var(--marrom-esc); border-radius: var(--radius-lg);
+  padding: 52px 56px; display: flex; align-items: center;
+  justify-content: space-between; gap: 28px;
+  position: relative; overflow: hidden;
+}
+.cta-dark::before {
+  content: ''; position: absolute; right: -50px; top: -50px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(201,169,110,.08);
+}
+.cta-dark h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800; color: #fff; margin-bottom: 10px;
+}
+.cta-dark p { font-size: .95rem; color: rgba(255,255,255,.65); max-width: 420px; line-height: 1.7; }
+.cta-btns { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
+
+/* ── SOCIAL ── */
+.social-row { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.social-btn {
+  display: flex; align-items: center; gap: 7px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
+  color: rgba(255,255,255,.85); padding: 8px 16px; border-radius: 50px;
+  font-size: .78rem; font-weight: 700; letter-spacing: .03em; transition: all .2s;
+}
+.social-btn:hover { background: rgba(255,255,255,.22); }
+
+/* ── FOOTER ── */
+footer { background: var(--marrom-esc); color: rgba(255,255,255,.6); padding: 52px 0 24px; }
+.footer__grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px; margin-bottom: 44px;
+}
+.footer__logo { display: block; height: 52px; width: auto; margin-bottom: 14px; filter: brightness(0) invert(1); }
+.footer__desc { font-size: .88rem; line-height: 1.7; margin-bottom: 20px; }
+.footer__h {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .72rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .09em; color: rgba(255,255,255,.9); margin-bottom: 14px;
+}
+.footer__ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.footer__ul a { font-size: .88rem; transition: color .2s; }
+.footer__ul a:hover { color: var(--blush); }
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.08); padding-top: 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: 'Montserrat', sans-serif; font-size: .72rem; color: rgba(255,255,255,.35);
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width: 960px) {
+  .device-row { grid-template-columns: 1fr; }
+  .device-photo-wrap { width: 140px; height: 140px; }
+  .cta-dark { flex-direction: column; align-items: flex-start; padding: 36px 32px; }
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media(max-width: 640px) {
+  .section { padding: 60px 0; }
+  .nav__links { display: none; }
+  .hamburger { display: flex; }
+  .nav__phone { font-size: 1rem; padding: 7px 16px; }
+  .nav__inner { height: 72px; }
+  .nav__logo img { height: 42px; }
+  .nav__links.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 72px; left: 0; right: 0;
+    background: #fff; padding: 20px 28px;
+    box-shadow: var(--sombra); gap: 18px;
+    border-top: 1px solid var(--creme-med);
+  }
+  .info-strip-inner { gap: 20px; }
+  .footer__grid { grid-template-columns: 1fr; }
+  .footer__bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
+
+/* ── WA FLOAT ── */
+.wa {
+  position: fixed; bottom: 28px; right: 28px; z-index: 800;
+  width: 62px; height: 62px; border-radius: 50%;
+  background: #25D366; display: flex;
+  align-items: center; justify-content: center;
+  box-shadow: 0 6px 30px rgba(37,211,102,.55);
+  transition: transform .2s, box-shadow .2s;
+}
+.wa::after {
+  content: ''; position: absolute;
+  width: 62px; height: 62px; border-radius: 50%;
+  background: rgba(37,211,102,.35);
+  animation: waPulse 2s ease-out infinite;
+}
+@keyframes waPulse {
+  0%   { transform: scale(1); opacity: .8; }
+  100% { transform: scale(1.75); opacity: 0; }
+}
+.wa:hover { transform: scale(1.1); box-shadow: 0 10px 40px rgba(37,211,102,.65); }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.webp" alt="Lubie Aparelhos Auditivos"/>
+      </a>
+            <div class="nav__links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="aparelhos.html" class="active">Aparelhos</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="sobre.html">Sobre</a>
+        <a href=videos.html>Vídeos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <a href="tel:4132057295" class="nav__phone">(41) 3205-7295</a>
+      <div class="hamburger" id="ham" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- FAIXA DESTAQUE — Teste 10 dias grátis -->
+<style>
+  .faixa10{background:#76833f;color:#fbfaf3;}
+  .faixa10__inner{max-width:1180px;margin:0 auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .faixa10__txt{display:flex;align-items:center;gap:12px;line-height:1.35;}
+  .faixa10__icon{font-size:26px;line-height:1;flex-shrink:0;}
+  .faixa10__strong{font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;display:block;}
+  .faixa10__sub{font-size:14px;opacity:.93;}
+  .faixa10__btn{background:#fbfaf3;color:#4a5a2a;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;padding:10px 18px;border-radius:10px;white-space:nowrap;text-decoration:none;transition:transform .15s,box-shadow .15s;flex-shrink:0;}
+  .faixa10__btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.18);}
+  @media(max-width:640px){
+    .faixa10__inner{flex-direction:column;text-align:center;padding:14px 18px;}
+    .faixa10__txt{flex-direction:column;gap:6px;}
+    .faixa10__btn{width:100%;text-align:center;}
+  }
+</style>
+<div class="faixa10" role="region" aria-label="Teste gratuito de 10 dias">
+  <div class="faixa10__inner">
+    <div class="faixa10__txt">
+      <span class="faixa10__icon" aria-hidden="true">🎧</span>
+      <span>
+        <span class="faixa10__strong">Teste o aparelho GRÁTIS por 10 dias</span>
+        <span class="faixa10__sub">No seu dia a dia, em casa e no trabalho.</span>
+      </span>
+    </div>
+    <a class="faixa10__btn" href="https://wa.me/554132057295?text=Ol%C3%A1%21+Quero+saber+como+funciona+o+teste+de+10+dias+sem+compromisso." target="_blank" rel="noopener">Quero testar →</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="hero-with-sidebar">
+      <div class="hero-main">
+        <div class="breadcrumb"><a href="index.html">Início</a> <span>›</span> Aparelhos</div>
+        <h1>Aparelhos que<br/>Transformam Vidas</h1>
+        <p>Tecnologia Rexton e NuEar com adaptação personalizada pela Fga. Jéssica. Teste em casa por até 10 dias sem compromisso.</p>
+        <a href="https://wa.me/554132057295?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20auditiva%20gratuita." target="_blank" rel="noopener" class="btn btn-primary" onclick="trackContactClick('whatsapp')">Agendar avaliação gratuita</a>
+        <a href="#rexton" class="btn btn-outline-white" style="margin-left:12px">Ver aparelhos ↓</a>
+      </div>
+      <div class="hero-leitura">
+        <div class="leitura-box">
+          <p class="leitura-label">📖 Leitura sugerida</p>
+          <a class="leitura-link" href="https://blog.lubieaparelhosauditivos.com.br/post/quanto-custa-um-aparelho-auditivo-em-curitiba-e-o-que-est%C3%A1-inclu%C3%ADdo-nesse-valor" target="_blank" rel="noopener">
+            <span class="leitura-arrow">→</span>
+            Quanto custa um aparelho auditivo em Curitiba — e o que está incluído nesse valor
+          </a>
+          <a class="leitura-link" href="https://blog.lubieaparelhosauditivos.com.br/post/aparelho-auditivo-parcelado-em-at%C3%A9-60x-como-funciona-o-financiamento-em-curitiba" target="_blank" rel="noopener">
+            <span class="leitura-arrow">→</span>
+            Aparelho auditivo parcelado em até 60x: como funciona o financiamento em Curitiba
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO STRIP -->
+<div class="info-strip">
+  <div class="container">
+    <div class="info-strip-inner">
+      <div class="info-item">
+        <div class="info-item__icon">🔬</div>
+        <div><strong>Avaliação gratuita</strong><span>Audiometria completa sem custo</span></div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">🏠</div>
+        <div><strong>Teste em casa</strong><span>Até 10 dias no seu dia a dia</span></div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">🎯</div>
+        <div><strong>Marcas premium</strong><span>Rexton e NuEar (Starkey)</span></div>
+      </div>
+      <div class="info-item">
+        <div class="info-item__icon">🔧</div>
+        <div><strong>Suporte vitalício</strong><span>Acompanhamento após a adaptação</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ REXTON ═══ -->
+<section class="section" id="rexton">
+  <div class="container">
+    <div class="marca-header">
+      <div class="marca-badge marca-badge--rexton">Rexton</div>
+      <h2 class="marca-title">Clareza de som com tecnologia alemã</h2>
+      <p class="marca-desc">Rexton pertence ao grupo WS Audiology, líder mundial em soluções auditivas. A linha Reach combina design discreto, alta qualidade de som e tecnologia Bluetooth para conectar você ao seu mundo com naturalidade.</p>
+    </div>
+
+    <div class="device-grid">
+
+      <!-- Reach R-LI -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="Reach%20R-LI.webp" alt="Rexton Reach R-LI"/>
+          </div>
+          <span class="device-form-tag">RIC · Receptor no Canal</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">Reach R-LI</h3>
+            <p class="device-subtitle">Recarregável com IA, Bluetooth e autonomia para o dia todo</p>
+          </div>
+          <ul class="device-features">
+            <li>Recarregável sem pilhas — autonomia de 24h em carga única</li>
+            <li>Bluetooth para conectar direto ao celular, TV e tablets</li>
+            <li>Redução de ruído inteligente com IA em até 48 canais (linha 80)</li>
+            <li>Aplicativo TruLink para controle e ajuste pelo smartphone</li>
+            <li>IP68 — resistência total a água e suor</li>
+            <li>Design RIC discreto e leve com receptor no canal</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cores disponíveis</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#c8bba8" title="Sandy Brown"></span>
+              <span class="color-swatch" style="background:#2b2b2b" title="Charcoal Black"></span>
+              <span class="color-swatch" style="background:#e8d5c0" title="Beige"></span>
+              <span class="color-swatch" style="background:#8b7355" title="Dark Brown"></span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Desempenho por linha</div>
+            <table class="lines-table">
+              <thead><tr><th>Recurso</th><th>Linha 80</th><th>Linha 40</th><th>Linha 30</th></tr></thead>
+              <tbody>
+                <tr><td>Canais</td><td>48</td><td>32</td><td>24</td></tr>
+                <tr><td>Controles</td><td>20</td><td>16</td><td>12</td></tr>
+                <tr><td>Programas</td><td>6</td><td>6</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reach SR Slim RIC -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="Reach%20SlimRic.webp" alt="Rexton Reach SR Slim RIC"/>
+          </div>
+          <span class="device-form-tag">Slim RIC · Ultra Discreto</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">Reach SR (Slim RIC)</h3>
+            <p class="device-subtitle">O mais discreto da linha Reach — praticamente invisível atrás da orelha</p>
+          </div>
+          <ul class="device-features">
+            <li>Perfil ultrafino — menor que uma goma de apagar</li>
+            <li>Recarregável com autonomia de 20h sem pilhas</li>
+            <li>Bluetooth para streaming direto de celular e TV</li>
+            <li>Processamento inteligente de som em ambientes ruidosos</li>
+            <li>Ideal para quem busca máxima discrição sem abrir mão da qualidade</li>
+            <li>Controle de volume e programas pelo app</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cores disponíveis</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#c8bba8" title="Sandy Brown"></span>
+              <span class="color-swatch" style="background:#2b2b2b" title="Charcoal Black"></span>
+              <span class="color-swatch" style="background:#a0816a" title="Sienna"></span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Desempenho por linha</div>
+            <table class="lines-table">
+              <thead><tr><th>Recurso</th><th>Linha 80</th><th>Linha 40</th><th>Linha 30</th></tr></thead>
+              <tbody>
+                <tr><td>Canais</td><td>48</td><td>32</td><td>24</td></tr>
+                <tr><td>Controles</td><td>20</td><td>16</td><td>12</td></tr>
+                <tr><td>Programas</td><td>6</td><td>6</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reach Inox-CIC -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="Reach%20Inox-CIC.webp" alt="Rexton Reach Inox CIC"/>
+          </div>
+          <span class="device-form-tag">CIC · Intra-Auricular Profundo</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">Reach Inox-CIC</h3>
+            <p class="device-subtitle">Totalmente invisível — cabe inteiro dentro do canal auditivo</p>
+          </div>
+          <ul class="device-features">
+            <li>CIC (Completely-in-Canal) — encaixe profundo e praticamente invisível</li>
+            <li>Corpo em aço inox para maior durabilidade e resistência</li>
+            <li>Processamento de alta qualidade para perdas leve a moderada</li>
+            <li>Pilha 10 — pequena, leve, com 3 a 5 dias de duração</li>
+            <li>Concha personalizada moldada para o seu canal auditivo</li>
+            <li>Som natural com redução inteligente de ruído</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cores disponíveis</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#d4b89a" title="Bege Claro"></span>
+              <span class="color-swatch" style="background:#a07055" title="Marrom Médio"></span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Desempenho por linha</div>
+            <table class="lines-table">
+              <thead><tr><th>Recurso</th><th>Linha 80</th><th>Linha 40</th><th>Linha 30</th></tr></thead>
+              <tbody>
+                <tr><td>Canais</td><td>48</td><td>32</td><td>24</td></tr>
+                <tr><td>Controles</td><td>20</td><td>16</td><td>12</td></tr>
+                <tr><td>Programas</td><td>6</td><td>6</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bicore Rugged -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="Bicore-Rugged.webp" alt="Rexton Bicore Rugged BTE"/>
+          </div>
+          <span class="device-form-tag">BTE · Retroauricular Power</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">Bicore Rugged</h3>
+            <p class="device-subtitle">Potência máxima para perdas severas a profundas — construção robusta para uso intenso</p>
+          </div>
+          <ul class="device-features">
+            <li>BTE robusto — ideal para perda auditiva severa a profunda</li>
+            <li>Processamento binaural para localização precisa do som</li>
+            <li>IP68 certificado — resistência total a água, poeira e impactos</li>
+            <li>Pilha 675 com alta duração — até 150h de uso contínuo</li>
+            <li>Controles físicos acessíveis diretamente no aparelho</li>
+            <li>Compatível com acessórios de streaming e microfone remoto</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cor disponível</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#5a6040" title="Olive Green"></span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Desempenho por linha</div>
+            <table class="lines-table">
+              <thead><tr><th>Recurso</th><th>Linha 80</th><th>Linha 40</th><th>Linha 30</th></tr></thead>
+              <tbody>
+                <tr><td>Canais</td><td>48</td><td>32</td><td>24</td></tr>
+                <tr><td>Controles</td><td>20</td><td>16</td><td>12</td></tr>
+                <tr><td>Programas</td><td>6</td><td>6</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NUEAR ═══ -->
+<section class="section section--creme" id="nuear">
+  <div class="container">
+    <div class="marca-header">
+      <div class="marca-badge marca-badge--nuear">NuEar · Starkey</div>
+      <h2 class="marca-title">Inteligência Artificial no seu ouvido</h2>
+      <p class="marca-desc">Tecnologia americana desenvolvida pela Starkey, referência mundial em IA aplicada à audição. Com até 55 milhões de ajustes automáticos por hora, sensores de saúde e o app My Starkey — um verdadeiro assistente de bem-estar integrado ao aparelho.</p>
+    </div>
+
+    <div class="device-grid">
+
+      <!-- Savant AI 1000 RIC -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="Savant%20AI%201000%20Ric.webp" alt="NuEar Savant AI 1000 RIC" onerror="this.src='https://www.hoershop.com/hoergeraete/assets/images/devices/starkey-evolv-ai-ric-r-champagne.jpg'"/>
+          </div>
+          <span class="device-form-tag">RIC · Receptor no Canal</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">Savant AI 1000 RIC</h3>
+            <p class="device-subtitle">Entrada inteligente com IA, Bluetooth e rastreamento de saúde</p>
+          </div>
+          <ul class="device-features">
+            <li>IA na análise de sinal — som mais claro e natural em qualquer ambiente</li>
+            <li>Recarregável — autonomia para o dia todo, sem troca de pilha</li>
+            <li>Conectividade Bluetooth direto ao smartphone (2,4 GHz)</li>
+            <li>Controle por toque (Tap) no aparelho e ajuste pelo app My Starkey</li>
+            <li>Rastreamento de saúde — conta passos e monitora atividade física</li>
+            <li>Ajuste remoto com a fonoaudióloga pelo app (TeleHear)</li>
+            <li>IP68 — proteção total a água e poeira</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cor disponível</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#c9a96e" title="Champagne"></span>
+              <span style="font-size:.78rem;color:var(--texto-light);font-family:'Nunito',sans-serif">Champagne</span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Especificações</div>
+            <table class="lines-table">
+              <thead><tr><th>Especificação</th><th>Detalhe</th></tr></thead>
+              <tbody>
+                <tr><td>Canais de processamento</td><td>10</td></tr>
+                <tr><td>Resistência</td><td>IP68</td></tr>
+                <tr><td>Bateria</td><td>Recarregável</td></tr>
+                <tr><td>Conectividade</td><td>Bluetooth 2,4 GHz</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- NXG AI 20 mRIC -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="NXG%20AI%2020%20RIC.webp" alt="NuEar NXG AI 20 mRIC" onerror="this.src='https://www.hoershop.com/hoergeraete/assets/images/devices/starkey-genesis-mric-r-cara.jpg'"/>
+          </div>
+          <span class="device-form-tag">mRIC · Ultra Slim</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">
+              NXG AI 20 mRIC
+              <span style="font-size:.7rem;font-weight:700;background:var(--marrom-esc);color:var(--blush);padding:3px 10px;border-radius:50px;letter-spacing:.05em">IA Avançada</span>
+            </h3>
+            <p class="device-subtitle">Alta tecnologia com saúde inteligente, conectividade total e sensores de IA</p>
+          </div>
+          <ul class="device-features">
+            <li>IA com 20 canais de processamento — clareza excepcional mesmo em ambientes barulhentos</li>
+            <li><strong>Sensor de queda</strong> — detecta automaticamente se o usuário caiu e envia alerta imediato para o celular do cuidador ou familiar</li>
+            <li><strong>Lembrete de remédios e compromissos</strong> — o aparelho avisa na hora certa, como uma Alexa no ouvido</li>
+            <li><strong>Monitoramento de saúde</strong> — conta passos, rastreia atividade física e engajamento social no app</li>
+            <li>Tradução de idiomas em tempo real diretamente pelo aparelho</li>
+            <li>Localização — encontre os aparelhos pelo app caso sejam perdidos</li>
+            <li>Recarregável com IP68 — proteção total a água e poeira</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cor disponível</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#b0b0b0" title="Silver"></span>
+              <span style="font-size:.78rem;color:var(--texto-light);font-family:'Nunito',sans-serif">Silver</span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Especificações</div>
+            <table class="lines-table">
+              <thead><tr><th>Especificação</th><th>Detalhe</th></tr></thead>
+              <tbody>
+                <tr><td>Canais de processamento</td><td>20</td></tr>
+                <tr><td>Resistência</td><td>IP68</td></tr>
+                <tr><td>Bateria</td><td>Recarregável</td></tr>
+                <tr><td>Conectividade</td><td>Bluetooth 2,4 GHz</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- NXG AI 24 -->
+      <div class="device-row">
+        <div class="device-photo-side">
+          <div class="device-photo-wrap">
+            <img src="NXG%20AI%2024%20RIC.webp" alt="NuEar NXG AI 24" onerror="this.src='https://www.hoershop.com/hoergeraete/assets/images/devices/starkey-genesis-ric-312.jpg'"/>
+          </div>
+          <span class="device-form-tag">RIC · Receptor no Canal</span>
+        </div>
+        <div class="device-info-side">
+          <div>
+            <h3 class="device-name">
+              NXG AI 24
+              <span style="font-size:.7rem;font-weight:700;background:var(--salmon);color:#fff;padding:3px 10px;border-radius:50px;letter-spacing:.05em">Topo de Linha</span>
+            </h3>
+            <p class="device-subtitle">O máximo em IA, conectividade e saúde — 24 canais, 55 milhões de ajustes/hora</p>
+          </div>
+          <ul class="device-features">
+            <li><strong>IA de última geração com 24 canais</strong> — 55 milhões de ajustes automáticos por hora para um som 100% natural</li>
+            <li><strong>Sensor de queda</strong> — detecta quedas automaticamente e envia alerta instantâneo ao celular do cuidador ou familiar responsável</li>
+            <li><strong>Lembrete de remédios e tarefas</strong> — avisa na hora programada, como ter uma Alexa dentro do ouvido</li>
+            <li><strong>Monitoramento completo de saúde</strong> — passos, atividade física, engajamento social e bem-estar acompanhados no app</li>
+            <li>Tradução de idiomas em tempo real e transcrição de conversas em texto</li>
+            <li>Chamadas handsfree bidirecional — fala e ouve direto pelo aparelho</li>
+            <li>Recarregável com IP68 — proteção total a água e poeira</li>
+          </ul>
+          <div>
+            <div class="device-lines-label">Cores disponíveis</div>
+            <div class="device-colors">
+              <span class="color-swatch" style="background:#f0f0f0;border-color:rgba(0,0,0,.22)" title="Moonstone White"></span>
+              <span class="color-swatch" style="background:#b0b0b0" title="Silver"></span>
+              <span class="color-swatch" style="background:#c9a96e" title="Champagne"></span>
+              <span style="font-size:.78rem;color:var(--texto-light);font-family:'Nunito',sans-serif">Moonstone · Silver · Champagne</span>
+            </div>
+          </div>
+          <div>
+            <div class="device-lines-label">Especificações</div>
+            <table class="lines-table">
+              <thead><tr><th>Especificação</th><th>Detalhe</th></tr></thead>
+              <tbody>
+                <tr><td>Canais de processamento</td><td>24 (máximo)</td></tr>
+                <tr><td>Ajustes automáticos/hora</td><td>55 milhões</td></tr>
+                <tr><td>Resistência</td><td>IP68</td></tr>
+                <tr><td>Bateria</td><td>Recarregável</td></tr>
+                <tr><td>Conectividade</td><td>Bluetooth 2,4 GHz</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cta-dark">
+      <div>
+        <h2>Quer testar antes de decidir?</h2>
+        <p>Leve o aparelho para casa por até 10 dias e teste no seu dia a dia — no trabalho, em casa, em ambientes ruidosos. A Fga. Jéssica acompanha todo o processo. Sem custo, sem compromisso.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="https://wa.me/554132057295?text=Ol%C3%A1!+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+auditiva." target="_blank" class="btn btn-primary">💬 WhatsApp</a>
+        <a href="contato.html" class="btn btn-outline-white">Agendar avaliação</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<section style="background:#f3ede4;padding:48px 0">
+  <div style="max-width:980px;margin:0 auto;padding:0 22px">
+    <h2 style="font-family:'Montserrat',sans-serif;font-weight:800;color:#4a3526;font-size:1.4rem;margin-bottom:18px">Leia também no blog</h2>
+    <ul style="list-style:none;padding:0;margin:0;columns:2;column-gap:40px"><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/como-funcionam-os-aparelhos-auditivos-modernos" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Como funcionam os aparelhos auditivos modernos?</a></li><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/como-saber-se-est%C3%A1-na-hora-de-usar-um-aparelho-auditivo" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Como saber se está na hora de usar um aparelho auditivo?</a></li><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/onde-fazer-teste-auditivo-gratuito-em-curitiba-avalia%C3%A7%C3%A3o-com-aparelhos-auditivos-na-lubie" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Onde fazer teste auditivo gratuito em Curitiba?</a></li><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/perda-auditiva-d%C3%A1-direito-a-pcd-o-que-mudou-com-a-nova-lei" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Perda auditiva dá direito a PCD? O que mudou na lei</a></li><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/quanto-custa-um-aparelho-auditivo-em-curitiba-e-o-que-est%C3%A1-inclu%C3%ADdo-nesse-valor" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Quanto custa um aparelho auditivo em Curitiba — e o que está incluído nesse valor</a></li><li style="margin-bottom:10px"><a href="https://blog.lubieaparelhosauditivos.com.br/post/aparelho-auditivo-parcelado-em-at%C3%A9-60x-como-funciona-o-financiamento-em-curitiba" target="_blank" rel="noopener" style="color:#8a5230;font-weight:600;text-decoration:none">→ Aparelho auditivo parcelado em até 60x: como funciona o financiamento em Curitiba</a></li></ul>
+    <div style="margin-top:22px"><a href="blog.html" style="color:#8a5230;font-weight:700;text-decoration:none">Ver todos os artigos →</a></div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img class="footer__logo" src="Logo1.webp" alt="Lubie Aparelhos Auditivos"/>
+        <p class="footer__desc">Especialista em aparelhos auditivos em Curitiba. Comprometida com a sua audição. Rua Duque de Caxias, 550 – Loja 5, São Francisco.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/lubie.aparelhosauditivos/" target="_blank" class="social-btn">Instagram</a>
+          <a href="https://www.youtube.com/@LubieAparelhosAuditivos" target="_blank" class="social-btn">YouTube</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__h">Páginas</p>
+        <ul class="footer__ul">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="aparelhos.html">Aparelhos</a></li>
+          <li><a href="acessorios.html">Acessórios</a></li>
+          <li><a href="sobre.html">Sobre</a>
+        <a href=videos.html>Vídeos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Serviços</p>
+        <ul class="footer__ul">
+          <li><a href="sobre.html">Avaliação Auditiva</a></li>
+          <li><a href="sobre.html">Adaptação de Aparelho</a></li>
+          <li><a href="sobre.html">Acompanhamento</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Contato</p>
+        <ul class="footer__ul">
+          <li><a href="tel:4132057295">(41) 3205-7295</a></li>
+          <li><a href="https://wa.me/554132057295">WhatsApp</a></li>
+          <li>R. Duque de Caxias, 550 – L5</li>
+          <li>São Francisco · Curitiba/PR</li>
+        </ul>
+<a href="https://wa.me/554132057295?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20auditiva%20gratuita." target="_blank" rel="noopener" class="wa" title="Fale pelo WhatsApp" onclick="trackContactClick('whatsapp')" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vídeos sobre Saúde Auditiva | Lubie Aparelhos Auditivos Curitiba</title>
+  <meta name="description" content="Assista aos vídeos da Fga. Jéssica Lubczyk sobre aparelhos auditivos, perda auditiva e saúde auditiva. Conteúdo educativo direto da especialista."/>
+  <link rel="canonical" href="https://lubieaparelhosauditivos.com.br/videos.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://lubieaparelhosauditivos.com.br/videos.html"/>
+  <meta property="og:title" content="Vídeos sobre Saúde Auditiva | Lubie Aparelhos Auditivos Curitiba"/>
+  <meta property="og:description" content="Assista aos vídeos da Fga. Jéssica Lubczyk sobre aparelhos auditivos, perda auditiva e saúde auditiva."/>
+  <meta property="og:image" content="https://lubieaparelhosauditivos.com.br/hero-jessica.webp"/>
+  <meta property="og:locale" content="pt_BR"/>
+  <meta property="og:site_name" content="Lubie Aparelhos Auditivos"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap"/>
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@300;400;500;600&display=swap"/></noscript>
+  <link rel="stylesheet" href="styles.css"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ESC27L283Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-ESC27L283Q');
+    gtag('config', 'AW-16922891425', { 'allow_enhanced_conversions': true });
+  </script>
+  <style>
+    .page-head{background:linear-gradient(135deg,var(--marrom) 0%,#5d3a22 100%);color:#fff;padding:64px 0 56px;}
+    .page-head .breadcrumb{font-size:.8rem;color:rgba(255,255,255,.7);font-family:'Montserrat',sans-serif;margin-bottom:14px;}
+    .page-head .breadcrumb a{color:rgba(255,255,255,.85);text-decoration:none;}
+    .page-head h1{font-family:'Montserrat',sans-serif;font-weight:800;font-size:2.3rem;line-height:1.15;margin:0 0 14px;}
+    .page-head p{color:rgba(255,255,255,.85);max-width:620px;line-height:1.7;margin:0;font-size:1.02rem;}
+    @media(max-width:640px){.page-head h1{font-size:1.7rem;}}
+
+    /* Grid de vídeos */
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 0;
+    }
+    .video-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      transition: box-shadow .25s, transform .25s;
+    }
+    .video-card:hover {
+      box-shadow: var(--sombra-h);
+      transform: translateY(-3px);
+    }
+    .video-thumb {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      background: #000;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .video-thumb img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity .3s;
+    }
+    .video-thumb .play-btn {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,.25);
+      transition: background .25s;
+    }
+    .video-thumb:hover .play-btn { background: rgba(0,0,0,.45); }
+    .play-btn svg { filter: drop-shadow(0 2px 8px rgba(0,0,0,.5)); }
+    .video-iframe-wrap {
+      position: absolute;
+      inset: 0;
+      display: none;
+    }
+    .video-iframe-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-info {
+      padding: 20px 22px 24px;
+    }
+    .video-info h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--marrom);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .video-meta {
+      font-size: .78rem;
+      color: var(--texto-light);
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 14px;
+    }
+    .video-meta span { display: flex; align-items: center; gap: 4px; }
+    .video-watch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      color: var(--salmon);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      transition: color .2s;
+    }
+    .video-watch-btn:hover { color: var(--marrom); }
+
+    /* CTA canal */
+    .canal-cta {
+      background: var(--marrom);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      margin-top: 56px;
+      flex-wrap: wrap;
+    }
+    .canal-cta h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .canal-cta p { color: rgba(255,255,255,.8); line-height: 1.7; max-width: 480px; margin: 0; }
+    .btn-yt {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #FF0000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: .88rem;
+      padding: 14px 26px;
+      border-radius: 50px;
+      white-space: nowrap;
+      transition: background .2s, transform .2s;
+      flex-shrink: 0;
+    }
+    .btn-yt:hover { background: #cc0000; transform: translateY(-1px); }
+    @media(max-width:640px){
+      .canal-cta { flex-direction: column; padding: 32px 24px; text-align: center; }
+      .canal-cta p { max-width: 100%; }
+    }
+
+    /* Shorts */
+    .shorts-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+    .short-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      background: #fff;
+      transition: box-shadow .25s, transform .25s;
+    }
+    .short-card:hover { box-shadow: var(--sombra-h); transform: translateY(-3px); }
+    .short-thumb {
+      position: relative;
+      width: 100%;
+      padding-top: 177.78%; /* 9:16 */
+      overflow: hidden;
+      display: block;
+      background: #000;
+    }
+    .short-thumb img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s;
+    }
+    .short-card:hover .short-thumb img { transform: scale(1.04); }
+    .short-play {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,.2);
+      transition: background .25s;
+    }
+    .short-card:hover .short-play { background: rgba(0,0,0,.4); }
+    .short-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #FF0000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      padding: 3px 8px;
+      border-radius: 50px;
+    }
+    .short-info {
+      padding: 14px 16px 18px;
+      flex: 1;
+    }
+    .short-info p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: .82rem;
+      font-weight: 600;
+      color: var(--marrom);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    @media(max-width:1024px){ .shorts-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media(max-width:640px){ .shorts-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+  </style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.webp" alt="Lubie Aparelhos Auditivos" decoding="async" loading="eager">
+      </a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html">Início</a>
+        <a href="aparelhos.html">Aparelhos</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="videos.html" class="active">Vídeos</a>
+        <a href="blog.html">Blog</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <a href="tel:4132057295" class="nav__phone" onclick="trackContactClick('phone')">(41) 3205-7295</a>
+      <div class="hamburger" id="ham" onclick="toggleNav()"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Início</a> › Vídeos</div>
+    <h1>Vídeos sobre saúde auditiva</h1>
+    <p>A Fga. Jéssica Lubczyk compartilha conhecimento direto: aparelhos auditivos, perda auditiva, dicas e bastidores da clínica. Conteúdo educativo e acessível para você e sua família.</p>
+  </div>
+</header>
+
+<section class="section" id="videos">
+  <div class="container">
+    <div class="videos-grid" id="videosGrid">
+
+      <!-- Vídeo 1 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-m6cCTr_NkSw" onclick="playVideo('m6cCTr_NkSw')">
+          <img src="https://img.youtube.com/vi/m6cCTr_NkSw/hqdefault.jpg" alt="Perda auditiva leve: colocando um aparelho auditivo no meu marido" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-m6cCTr_NkSw"></div>
+        </div>
+        <div class="video-info">
+          <h3>Perda auditiva leve: colocando um aparelho auditivo no meu marido</h3>
+          <div class="video-meta"><span>⏱ 2:02</span><span>👁 3,2 mil visualizações</span><span>🕐 há 3 meses</span></div>
+          <button class="video-watch-btn" onclick="playVideo('m6cCTr_NkSw')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 2 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-0Zur79AvORw" onclick="playVideo('0Zur79AvORw')">
+          <img src="https://img.youtube.com/vi/0Zur79AvORw/hqdefault.jpg" alt="Aparelho Auditivo Invisível (CIC) Rexton IX: Vale a Pena?" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-0Zur79AvORw"></div>
+        </div>
+        <div class="video-info">
+          <h3>Aparelho Auditivo Invisível (CIC) Rexton IX: Vale a Pena?</h3>
+          <div class="video-meta"><span>⏱ 1:02</span><span>👁 6,5 mil visualizações</span><span>🕐 há 3 meses</span></div>
+          <button class="video-watch-btn" onclick="playVideo('0Zur79AvORw')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 3 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-MgtOfkoIG4Q" onclick="playVideo('MgtOfkoIG4Q')">
+          <img src="https://img.youtube.com/vi/MgtOfkoIG4Q/hqdefault.jpg" alt="Não se adaptou ao aparelho? A avaliação pode ser o motivo." loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-MgtOfkoIG4Q"></div>
+        </div>
+        <div class="video-info">
+          <h3>Não se adaptou ao aparelho? A avaliação pode ser o motivo.</h3>
+          <div class="video-meta"><span>⏱ 3:47</span><span>🕐 há 3 meses</span></div>
+          <button class="video-watch-btn" onclick="playVideo('MgtOfkoIG4Q')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 4 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-CikAzU0Vd9s" onclick="playVideo('CikAzU0Vd9s')">
+          <img src="https://img.youtube.com/vi/CikAzU0Vd9s/hqdefault.jpg" alt="O melhor aparelho auditivo é o que combina com a sua rotina." loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-CikAzU0Vd9s"></div>
+        </div>
+        <div class="video-info">
+          <h3>O melhor aparelho auditivo é o que combina com a sua rotina.</h3>
+          <div class="video-meta"><span>⏱ 1:18</span><span>🕐 há 11 meses</span></div>
+          <button class="video-watch-btn" onclick="playVideo('CikAzU0Vd9s')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 5 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-NTMJPvyLz3o" onclick="playVideo('NTMJPvyLz3o')">
+          <img src="https://img.youtube.com/vi/NTMJPvyLz3o/hqdefault.jpg" alt="Ouço, mas não entendo — isso pode ser perda auditiva, e ela tem solução." loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-NTMJPvyLz3o"></div>
+        </div>
+        <div class="video-info">
+          <h3>"Ouço, mas não entendo" — isso pode ser perda auditiva, e ela tem solução.</h3>
+          <div class="video-meta"><span>⏱ 1:53</span><span>👁 16 visualizações</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('NTMJPvyLz3o')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 6 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-CZJhUatAzQM" onclick="playVideo('CZJhUatAzQM')">
+          <img src="https://img.youtube.com/vi/CZJhUatAzQM/hqdefault.jpg" alt="Quanto Custa um Aparelho Auditivo em 2025? Descubra Agora!" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-CZJhUatAzQM"></div>
+        </div>
+        <div class="video-info">
+          <h3>Quanto Custa um Aparelho Auditivo? Descubra Agora!</h3>
+          <div class="video-meta"><span>⏱ 2:19</span><span>👁 294 visualizações</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('CZJhUatAzQM')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 7 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-9Bid8iCKV8o" onclick="playVideo('9Bid8iCKV8o')">
+          <img src="https://img.youtube.com/vi/9Bid8iCKV8o/hqdefault.jpg" alt="3 Passos Para Começar a Usar Aparelho Auditivo com Segurança e Tranquilidade" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-9Bid8iCKV8o"></div>
+        </div>
+        <div class="video-info">
+          <h3>3 Passos Para Começar a Usar Aparelho Auditivo com Segurança e Tranquilidade</h3>
+          <div class="video-meta"><span>⏱ 3:49</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('9Bid8iCKV8o')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 8 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-J93pJOmlQzE" onclick="playVideo('J93pJOmlQzE')">
+          <img src="https://img.youtube.com/vi/J93pJOmlQzE/hqdefault.jpg" alt="Nunca testou um aparelho auditivo? Vamos conversar sobre isso" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-J93pJOmlQzE"></div>
+        </div>
+        <div class="video-info">
+          <h3>Nunca testou um aparelho auditivo? Vamos conversar sobre isso</h3>
+          <div class="video-meta"><span>⏱ 1:08</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('J93pJOmlQzE')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 9 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-t89pvn90qbQ" onclick="playVideo('t89pvn90qbQ')">
+          <img src="https://img.youtube.com/vi/t89pvn90qbQ/hqdefault.jpg" alt="A perda auditiva começa em silêncio. Não ignore os sinais!" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-t89pvn90qbQ"></div>
+        </div>
+        <div class="video-info">
+          <h3>A perda auditiva começa em silêncio. Não ignore os sinais!</h3>
+          <div class="video-meta"><span>⏱ 1:04</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('t89pvn90qbQ')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+      <!-- Vídeo 10 -->
+      <div class="video-card">
+        <div class="video-thumb" id="vt-kFdjm-OL0-E" onclick="playVideo('kFdjm-OL0-E')">
+          <img src="https://img.youtube.com/vi/kFdjm-OL0-E/hqdefault.jpg" alt="Perda auditiva não é só sobre ouvir menos — é sobre viver menos" loading="lazy">
+          <div class="play-btn"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+          <div class="video-iframe-wrap" id="vi-kFdjm-OL0-E"></div>
+        </div>
+        <div class="video-info">
+          <h3>Perda auditiva não é só sobre ouvir menos — é sobre viver menos</h3>
+          <div class="video-meta"><span>⏱ 0:45</span><span>🕐 há 1 ano</span></div>
+          <button class="video-watch-btn" onclick="playVideo('kFdjm-OL0-E')"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg> Assistir</button>
+        </div>
+      </div>
+
+    </div><!-- /videos-grid -->
+
+    <!-- SHORTS -->
+    <div style="margin-top:64px">
+      <div style="text-align:center;max-width:560px;margin:0 auto 40px">
+        <span class="pill">Shorts</span>
+        <h2 class="sec-title">Vídeos curtos</h2>
+        <p class="sec-sub" style="margin:0 auto">Conteúdo rápido sobre saúde auditiva — assista em menos de 1 minuto.</p>
+      </div>
+      <div class="shorts-grid">
+
+        <div class="short-card">
+          <a href="https://www.youtube.com/shorts/D_gn9dx8bKk" target="_blank" rel="noopener" class="short-thumb">
+            <img src="https://img.youtube.com/vi/D_gn9dx8bKk/hqdefault.jpg" alt="Escuta, mas não entende? Não é volume, é compreensão." loading="lazy">
+            <div class="short-play"><svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+            <span class="short-badge">Short</span>
+          </a>
+          <div class="short-info">
+            <p>Escuta, mas não entende? Não é volume, é compreensão. Perdas auditivas sobrecarregam o cérebro!</p>
+            <span class="video-meta">👁 229 visualizações</span>
+          </div>
+        </div>
+
+        <div class="short-card">
+          <a href="https://www.youtube.com/shorts/YurkPHDYzR0" target="_blank" rel="noopener" class="short-thumb">
+            <img src="https://img.youtube.com/vi/YurkPHDYzR0/hqdefault.jpg" alt="Se você vive repetindo eu escuto mas não entendo — esse vídeo é pra você!" loading="lazy">
+            <div class="short-play"><svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+            <span class="short-badge">Short</span>
+          </a>
+          <div class="short-info">
+            <p>Se você vive repetindo "eu escuto, mas não entendo" — esse vídeo é pra você!</p>
+            <span class="video-meta">👁 175 visualizações</span>
+          </div>
+        </div>
+
+        <div class="short-card">
+          <a href="https://www.youtube.com/shorts/h_5K1b6MFqg" target="_blank" rel="noopener" class="short-thumb">
+            <img src="https://img.youtube.com/vi/h_5K1b6MFqg/hqdefault.jpg" alt="Perda auditiva leve: colocando um aparelho auditivo no meu marido" loading="lazy">
+            <div class="short-play"><svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+            <span class="short-badge">Short</span>
+          </a>
+          <div class="short-info">
+            <p>Perda auditiva leve: colocando um aparelho auditivo no meu marido</p>
+            <span class="video-meta">👁 149 visualizações</span>
+          </div>
+        </div>
+
+        <div class="short-card">
+          <a href="https://www.youtube.com/shorts/E5-swtQ0STA" target="_blank" rel="noopener" class="short-thumb">
+            <img src="https://img.youtube.com/vi/E5-swtQ0STA/hqdefault.jpg" alt="Recarregável e invisível! O novo aparelho auditivo da Rexton!" loading="lazy">
+            <div class="short-play"><svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+            <span class="short-badge">Short</span>
+          </a>
+          <div class="short-info">
+            <p>Recarregável e invisível! O novo aparelho auditivo da Rexton!</p>
+            <span class="video-meta">👁 8 visualizações</span>
+          </div>
+        </div>
+
+        <div class="short-card">
+          <a href="https://www.youtube.com/shorts/CTBnn1XdjxU" target="_blank" rel="noopener" class="short-thumb">
+            <img src="https://img.youtube.com/vi/CTBnn1XdjxU/hqdefault.jpg" alt="TODO MUNDO percebe quando você não ouve!" loading="lazy">
+            <div class="short-play"><svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="rgba(255,255,255,0.92)"/><polygon points="26,20 50,32 26,44" fill="#FF0000"/></svg></div>
+            <span class="short-badge">Short</span>
+          </a>
+          <div class="short-info">
+            <p>TODO MUNDO percebe quando você não ouve!</p>
+            <span class="video-meta">👁 4 visualizações</span>
+          </div>
+        </div>
+
+      </div><!-- /shorts-grid -->
+    </div>
+
+    <!-- CTA canal YouTube -->
+    <div class="canal-cta">
+      <div>
+        <h3>Mais vídeos no canal da Lubie</h3>
+        <p>Inscreva-se no canal para não perder os próximos vídeos da Fga. Jéssica sobre saúde auditiva, aparelhos e dicas do dia a dia.</p>
+      </div>
+      <a href="https://www.youtube.com/@LubieAparelhosAuditivos" target="_blank" rel="noopener" class="btn-yt">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        Ver canal no YouTube
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section--creme">
+  <div class="container" style="text-align:center;max-width:600px;margin:0 auto">
+    <span class="pill">Quer tirar dúvidas?</span>
+    <h2 class="sec-title">Fale diretamente com a especialista</h2>
+    <p style="color:var(--texto-light);line-height:1.8;margin-bottom:28px;">Assistiu a um vídeo e ficou com dúvidas? A Fga. Jéssica atende pessoalmente — sem intermediários. Agende uma avaliação gratuita.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="contato.html" class="btn btn-primary">Agendar avaliação gratuita</a>
+      <a href="https://wa.me/554132057295?text=Ol%C3%A1%21+Vi+um+v%C3%ADdeo+no+site+e+gostaria+de+tirar+uma+d%C3%BAvida." target="_blank" rel="noopener" class="btn btn-outline" onclick="trackContactClick('whatsapp')">WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img class="footer__logo" src="logo.webp" alt="Lubie Aparelhos Auditivos" decoding="async" loading="lazy">
+        <p class="footer__desc">Especialista em aparelhos auditivos em Curitiba. Comprometida com a sua audição. Rua Duque de Caxias, 550 – Loja 5, São Francisco.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/lubie.aparelhosauditivos/" target="_blank" rel="noopener" class="social-btn" style="padding:7px 14px;font-size:.75rem;">Instagram</a>
+          <a href="https://www.youtube.com/@LubieAparelhosAuditivos" target="_blank" rel="noopener" class="social-btn" style="padding:7px 14px;font-size:.75rem;">YouTube</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__h">Páginas</p>
+        <ul class="footer__ul">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="aparelhos.html">Aparelhos</a></li>
+          <li><a href="acessorios.html">Acessórios</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="videos.html">Vídeos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Conteúdo</p>
+        <ul class="footer__ul">
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="videos.html">Vídeos</a></li>
+          <li><a href="index.html#faq">Perguntas frequentes</a></li>
+          <li><a href="contato.html">Localização</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer__h">Contato</p>
+        <ul class="footer__ul">
+          <li><a href="tel:4132057295" onclick="trackContactClick('phone')">(41) 3205-7295</a></li>
+          <li><a href="https://wa.me/554132057295" onclick="trackContactClick('whatsapp')">WhatsApp</a></li>
+          <li>R. Duque de Caxias, 550 – L5</li>
+          <li>São Francisco, Curitiba – PR</li>
+          <li>Seg–Sex: 9h–18h</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Lubie Aparelhos Auditivos. Todos os direitos reservados.</span>
+      <span>Fga. Jéssica Lubczyk • CRFa-PR</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar" id="mobile-bar" role="navigation" aria-label="Ações rápidas">
+  <a href="contato.html" class="mobile-bar__btn mobile-bar__btn--primary">Agendar</a>
+  <a href="https://wa.me/554132057295?text=Ol%C3%A1%21+Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o+auditiva+gratuita." target="_blank" rel="noopener" class="mobile-bar__btn mobile-bar__btn--wa" onclick="trackContactClick('whatsapp')">WhatsApp</a>
+  <a href="tel:4132057295" class="mobile-bar__btn mobile-bar__btn--phone" onclick="trackContactClick('phone')">Ligar</a>
+</div>
+<a href="https://wa.me/554132057295?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20auditiva%20gratuita." target="_blank" rel="noopener" class="wa" title="Fale pelo WhatsApp" onclick="trackContactClick('whatsapp')" aria-label="WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="32" height="32"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<style>
+/* ── Lightbox de vídeo ───────────────────────────────────────────── */
+#video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.88);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#video-modal.open { display: flex; }
+#video-modal-inner {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,.7);
+}
+#video-modal-inner iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+#video-modal-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: .8;
+  transition: opacity .2s;
+  padding: 4px 8px;
+}
+#video-modal-close:hover { opacity: 1; }
+@media(max-width:640px){
+  #video-modal-close { top: -40px; font-size: 1.6rem; }
+}
+</style>
+
+<!-- Lightbox -->
+<div id="video-modal" role="dialog" aria-modal="true" aria-label="Reproduzir vídeo">
+  <div id="video-modal-inner">
+    <button id="video-modal-close" aria-label="Fechar vídeo">✕</button>
+  </div>
+</div>
+
+<script>
+var _modal       = document.getElementById('video-modal');
+var _modalInner  = document.getElementById('video-modal-inner');
+var _modalClose  = document.getElementById('video-modal-close');
+
+function openVideoModal(id) {
+  var old = _modalInner.querySelector('iframe');
+  if (old) old.remove();
+
+  // Abre o modal ANTES de criar o iframe — garante que o player
+  // inicializa com as dimensões reais (evita Erro 153 de config)
+  _modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+
+  requestAnimationFrame(function() {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+    iframe.setAttribute('allow', 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture; web-share');
+    iframe.setAttribute('allowfullscreen', '');
+    _modalInner.appendChild(iframe);
+  });
+}
+
+function closeVideoModal() {
+  _modal.classList.remove('open');
+  document.body.style.overflow = '';
+  // Para o vídeo removendo o iframe
+  var iframe = _modalInner.querySelector('iframe');
+  if (iframe) iframe.remove();
+}
+
+// Compatibilidade: playVideo continua funcionando (Shorts também usam)
+function playVideo(id) { openVideoModal(id); }
+
+_modalClose.addEventListener('click', closeVideoModal);
+_modal.addEventListener('click', function(e) {
+  if (e.target === _modal) closeVideoModal();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeVideoModal();
+});
+</script>
+<script src="main.js" defer></script>
+</body>
+</html>
